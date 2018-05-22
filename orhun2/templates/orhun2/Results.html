@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+    Your group was assigned to Firm A. <BR>
+    Firm A displays the performance of others in the group. <BR>
+
+Your group's scores were {{ group.scores }}
+
+    {% next_button %}
+{% endblock %}
+
+

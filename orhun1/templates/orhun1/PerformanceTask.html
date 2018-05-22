@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Performance Task
+{% endblock %}
+
+{% block content %}
+    What is {{ player.n1 }} + {{ player.n2 }}?
+{% formfield player.input %}
+    {% next_button %}
+
+{% endblock %}

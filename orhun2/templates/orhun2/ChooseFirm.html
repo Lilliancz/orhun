@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Choose Firm
+{% endblock %}
+
+{% block content %}
+    Firm A: see performance of others<BR>
+    Firm B: do not see performance<BR>
+    <BR>
+    Which firm do you prefer?
+     {% formfield group.firm %}
+    {% next_button %}
+
+{% endblock %}

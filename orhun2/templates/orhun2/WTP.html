@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Choose Firm
+{% endblock %}
+
+{% block content %}
+Would you rather pay money or receive money?
+    <BR><BR>
+    Pay money<BR><BR>
+    {% formfield group.wtp %}
+    Earn money<BR><BR>
+    {% next_button %}
+
+{% endblock %}
